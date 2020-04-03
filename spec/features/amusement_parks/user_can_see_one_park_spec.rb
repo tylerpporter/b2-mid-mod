@@ -23,7 +23,7 @@ describe 'When I visit /parks/:id'
     @ride1.name.should appear_before(@ride3.name)
     @ride1.name.should appear_before(@ride2.name)
     @ride3.name.should appear_before(@ride2.name)
-    expect(page).to have_content("Average Thrill Rating of Rides: #{@park1.avg_thrill}")
+    expect(page).to have_content("Average Thrill Rating of Rides: #{@park1.avg_thrill}/10")
   end
 
 end
