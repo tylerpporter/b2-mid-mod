@@ -1,0 +1,7 @@
+<h2><%= @park.name %></h2>
+<strong>Admissions: <%= @park.admission %> </strong>
+
+<h3>Rides:</h3>
+<% @park.ordered.each do |ride| %>
+  <p><%= ride.name %></p>
+<% end %>
