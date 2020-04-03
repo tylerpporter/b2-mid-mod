@@ -5,3 +5,11 @@
 <% @mechanic.rides.each do |ride| %>
   <p><%= ride.name %></p>
 <% end %>
+</br>
+<strong>Add a ride to workload:</strong>
+</br>
+<%= form_tag "/mechanics/#{@mechanic.id}", method: :patch do %>
+  <%= label_tag "Ride id" %>
+  <%= text_field_tag :ride_id %>
+  <%= submit_tag "Submit" %>
+<% end %>
