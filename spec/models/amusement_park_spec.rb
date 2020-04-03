@@ -17,5 +17,9 @@ RSpec.describe AmusementPark do
       expect(park1.ordered).to eq([ride1, ride3, ride2])
     end
 
+    it 'avg_thrill' do
+      expect(park1.avg_thrill).to eq(7.67)
+    end
+
   end
 end
